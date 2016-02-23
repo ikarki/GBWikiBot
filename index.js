@@ -108,7 +108,7 @@ function createTweet(result){
 	var originalRelease = result.original_release_date;
 	// If there is a orignal release date, convert it to right format and add it to the tweet. If there is no orignal release date, do nothing.
 	if(originalRelease){
-		tweet += ' Original releas date ' + moment(originalRelease).format('MMM Do YYYY') + '.';
+		tweet += ' Original release date ' + moment(originalRelease).format('MMM Do YYYY') + '.';
 	}
 	// Add link to the wiki page.
 	tweet += ' ' + result.site_detail_url;
